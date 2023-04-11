@@ -5,7 +5,7 @@ public enum Module1Topics {
     MAVEN(2, "Apache Maven", "Изучение сборщика проектов Maven"),
     TOMCAT(3, "Apache Tomcat", "Изучение основ HTTP, TCP/IP и web сервера Tomcat"),
     SERVLET(4, "HttpServlet", "Освоение технологии java сервлетов"),
-    GIT(5, "GIT", "Работа с системой контроля версий GIT");
+    GIT(5, "GIT ", "Работа с системой контроля версий GIT");
 
     private int order;
     private String topic;
