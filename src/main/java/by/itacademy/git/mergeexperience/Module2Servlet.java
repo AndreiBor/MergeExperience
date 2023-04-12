@@ -17,7 +17,7 @@ import java.util.List;
 @WebServlet("/module2")
 public class Module2Servlet extends HttpServlet {
     private String message;
-
+    private String message1;
     public void init() {
         message = "Модуль 2";
     }
