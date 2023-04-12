@@ -18,6 +18,7 @@ import java.util.List;
 public class Module2Servlet extends HttpServlet {
     private String message;
     private String message1;
+    private String message2;
     public void init() {
         message = "Модуль 2";
     }
