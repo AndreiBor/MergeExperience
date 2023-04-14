@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../MergeExperience.iml" filepath="$PROJECT_DIR$/../MergeExperience.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MergeExperience.iml" filepath="$PROJECT_DIR$/MergeExperience.iml" />
     </modules>
   </component>
 </project>

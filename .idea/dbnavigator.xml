@@ -13,7 +13,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="9624ad4c-fccd-41d7-adfb-accc0f03be7a">
-      <console name="Connection" type="STANDARD" schema="kozlov_db" session="Main"><![CDATA[-- create database kozlov_db;
+      <console name="Connection" type="STANDARD" schema="kozlov_db" session="Main">-- create database kozlov_db;
 -- create schema public;
 
 create table public.modules(
@@ -96,9 +96,8 @@ SELECT th.id,
             th.id_module, 
             m.name_of_module       
             FROM public.themes as th
-            LEFT JOIN "public".modules as m on m.id = th.id_module
-WHERE th.id_module = 1]]></console>
-      <console name="Connection 1" type="STANDARD" schema="kozlov_db" session="Main" />
+            LEFT JOIN &quot;public&quot;.modules as m on m.id = th.id_module
+WHERE th.id_module = 1</console>
       <console name="Connection 1" type="STANDARD" schema="kozlov_db" session="Main" />
     </connection>
   </component>
