@@ -22,16 +22,21 @@ public class Module1Servlet extends HttpServlet {
         out.println("<h1>" + message + "</h1>");
 
         out.println("<table>");
-        for (Module1Topics value : Module1Topics.values())
+        for (Module1Topics value : Module1Topics.values()) {
             out.println("<tr><td>"
                     + value.getOrder() + "</td><td>"
                     + value.getTopic() + "</td><td>"
-                    + value.getDesc()
-                    + "</td><td><a href=''>Подробнее</a>"
-                    + "</td></tr>");
+                    + value.getDesc() + "</td><td>");
 
+            if (value.isHasDefinition()){
+                out.println("<a href='/jakartaEEDescription.html'>Подробнее</a>");
+            } else {
+                out.println("<a href='/notImplemented.html'>Подробнее</a>");
+            }
+
+            out.println("</td></tr>");
+        }
         out.println("</table>");
-
         out.println("</body></html>");
     }
 
