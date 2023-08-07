@@ -37,8 +37,6 @@ public class Module1Servlet extends HttpServlet {
         out.println("<a href='/module2'>&rarr;</a>");
         out.println("</div>");
 
-
-
         out.println("</body></html>");
     }
 
