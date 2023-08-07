@@ -24,6 +24,11 @@ public class Module2Servlet extends HttpServlet {
         out.println("<html><body>");
         out.println("<h1>" + message + "</h1>");
 
+        out.println("<div style='text-align: center;'>");
+        out.println("<button onclick=\"location.href='/module1'\"><- Предыдущий модуль</button>");
+        out.println("<button onclick=\"location.href='/module3'\">Следующий модуль -></button>");
+        out.println("</div>");
+
         out.println("</body></html>");
     }
 
