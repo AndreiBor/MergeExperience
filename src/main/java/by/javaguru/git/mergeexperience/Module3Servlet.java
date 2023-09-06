@@ -28,19 +28,23 @@ public class Module3Servlet extends HttpServlet {
         out.println("<table>");
         for (Module3Topics value : Module3Topics.values())
             out.println("<tr><td>"
-                    + value.getOrder() + "</td><td>"
-                    + value.getTopic() + "</td><td>"
-                    + value.getDesc()
-                    + "</td><td><a href=''>Подробнее</a>"
-                    + "</td></tr>");
+                        + value.getOrder() + "</td><td>"
+                        + value.getTopic() + "</td><td>"
+                        + value.getDesc()
+                        + "</td><td><a href=''>Подробнее</a>"
+                        + "</td></tr>");
 
         out.println("</table>");
 
         out.println("<a href='module2'>");
-        out.println("<button type='button'><- Previous</button>");
+        out.println("<button>");
+        out.println("<img src='left.png' />");
+        out.println("</button>");
         out.println("</a>");
         out.println("<a href='module4'>");
-        out.println("<button type='button'>Next -></button>");
+        out.println("<button>");
+        out.println("<img src='right.png' />");
+        out.println("</button>");
         out.println("</a>");
 
 
