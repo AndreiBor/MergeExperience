@@ -36,6 +36,13 @@ public class Module3Servlet extends HttpServlet {
 
         out.println("</table>");
 
+        out.println("<a href='module2'>");
+        out.println("<button type='button'><- Previous</button>");
+        out.println("</a>");
+        out.println("<a href='module4'>");
+        out.println("<button type='button'>Next -></button>");
+        out.println("</a>");
+
 
         out.println("</body></html>");
     }
