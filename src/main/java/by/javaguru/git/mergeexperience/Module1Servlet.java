@@ -24,12 +24,21 @@ public class Module1Servlet extends HttpServlet {
 
         out.println("<table>");
         for (Module1Topics value : Module1Topics.values())
-            out.println("<tr><td>"
-                        + value.getOrder() + "</td><td>"
-                        + value.getTopic() + "</td><td>"
-                        + value.getDesc()
-                        + "</td><td><a href=''>Подробнее</a>"
-                        + "</td></tr>");
+            if (value.getOrder() == 1) {
+                out.println("<tr><td>"
+                            + value.getOrder() + "</td><td>"
+                            + value.getTopic() + "</td><td>"
+                            + value.getDesc()
+                            + "</td><td><a href='javaTechnologies.jsp'>Подробнее</a>"
+                            + "</td></tr>");
+            } else {
+                out.println("<tr><td>"
+                            + value.getOrder() + "</td><td>"
+                            + value.getTopic() + "</td><td>"
+                            + value.getDesc()
+                            + "</td><td><a href='notReady.jsp'>Подробнее</a>"
+                            + "</td></tr>");
+            }
 
         out.println("</table>");
 
