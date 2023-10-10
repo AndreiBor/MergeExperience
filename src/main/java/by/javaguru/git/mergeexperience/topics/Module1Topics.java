@@ -1,7 +1,10 @@
 package by.javaguru.git.mergeexperience.topics;
 
 public enum Module1Topics {
-    JAKARTA(1, "Jakarta ", "Обзор java enterprise технологий"),
+    JAKARTA(1,
+            "Jakarta ",
+            "Обзор java enterprise технологий",
+            "jakarta_details.jsp"),
     MAVEN(2, "Apache Maven ", "Изучение сборщика проектов Maven"),
     TOMCAT(3, "Apache Tomcat ", "Изучение основ HTTP, TCP/IP и web сервера Tomcat"),
     SERVLET(4, "HttpServlet ", "Освоение технологии java сервлетов"),
@@ -10,6 +13,15 @@ public enum Module1Topics {
     private int order;
     private String topic;
     private String desc;
+
+    private String detailsFile = "no_details.jsp";
+
+    Module1Topics(int order, String topic, String desc, String detailsFile) {
+        this.order = order;
+        this.topic = topic;
+        this.desc = desc;
+        this.detailsFile = detailsFile;
+    }
 
     Module1Topics(int order, String topic, String desc) {
         this.order = order;
@@ -27,5 +39,9 @@ public enum Module1Topics {
 
     public String getDesc() {
         return desc;
+    }
+
+    public String getDetailsFile() {
+        return detailsFile;
     }
 }

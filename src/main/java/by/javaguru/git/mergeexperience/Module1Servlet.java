@@ -51,7 +51,7 @@ public class Module1Servlet extends HttpServlet {
                     + value.getOrder() + "</td><td>"
                     + value.getTopic() + "</td><td>"
                     + value.getDesc()
-                    + "</td><td><a href=''>Подробнее</a>"
+                    + "</td><td><a href='" + value.getDetailsFile() + "'>Подробнее</a>"
                     + "</td></tr>");
 
         out.println("</table>");
