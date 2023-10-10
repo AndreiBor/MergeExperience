@@ -32,6 +32,16 @@ public class Module1Servlet extends HttpServlet {
 
         out.println("</table>");
 
+        out.println("<div id=\"buttons\" style=\"float:left; height:100%; width:100%\">");
+        out.println("<div id=\"previous\" style=\"float:left; width:25%; \">");
+        out.println("<button type=\"button\">\"<- Предыдущий модуль\"</button>");
+        out.println("</div>");
+
+        out.println("<div id=\"next\" style=\"float:left; width:25%; \">");
+        out.println("<button type=\"button\">\"Следующий модуль ->\"</button>");
+        out.println("</div>");
+        out.println("</div>");
+
         out.println("</body></html>");
     }
 
